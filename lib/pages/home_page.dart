@@ -72,7 +72,21 @@ class _HomePageState extends State<HomePage> {
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(40),
                       ),
-                    )))
+                    ))),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [Text('row'), Text('data'), Text('example')],
+            ),
+            Row(
+              children: [
+                Expanded(child: Container(
+                  color: Colors.green,
+                  child: Text('data2'),
+                )),
+                Text('data'),
+                Text('data')
+              ],
+            ),
           ],
         )));
   }
