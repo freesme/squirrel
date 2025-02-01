@@ -37,8 +37,32 @@ class _HomePageState extends State<HomePage> {
                 pagination: const SwiperPagination(),
                 control: const SwiperControl(),
               ),
-            )
+            ),
+            Expanded(
+                child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return _listItemView();
+                    },
+                    itemCount: 10))
           ],
         )));
+  }
+
+  Widget _listItemView() {
+    return Column(children: [
+      Row(
+        children: [
+          Image.network(
+            "https://img2.baidu.com/it/u=1940498811,3704695280&fm=253&fmt=auto&app=138&f=JPEG",
+            height: 60,
+            width: 30,
+          ),
+          Expanded(child: SizedBox(width: 20,height: 30)),
+          Text("Author"),
+          Text('20241211'),
+          Text('top'),
+        ],
+      )
+    ]);
   }
 }
