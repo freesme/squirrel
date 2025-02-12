@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:squirrel/pages/TabsPage.dart';
+import 'package:squirrel/pages/tabs_page.dart';
 import 'package:squirrel/pages/home_page.dart';
 import 'package:squirrel/pages/layout_demo.dart';
 

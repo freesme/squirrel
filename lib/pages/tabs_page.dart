@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:squirrel/pages/home_page.dart';
 import 'package:squirrel/pages/layout_demo.dart';
 
-import 'FirstRoute.dart';
+import 'first_route.dart';
 
 class TabsPage extends StatefulWidget {
   const TabsPage({super.key});
