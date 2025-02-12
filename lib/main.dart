@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:squirrel/pages/TabsPage.dart';
 import 'package:squirrel/pages/home_page.dart';
 import 'package:squirrel/pages/layout_demo.dart';
 
@@ -13,8 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LayoutDemo(),
-      // home: HomePage(),
+      home: TabsPage(),
     );
   }
 }
